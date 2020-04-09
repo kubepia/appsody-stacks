@@ -1,0 +1,4 @@
+dev.*.json
+dev.*.yaml
+collections/dev.*.json
+collections/dev.*.yaml
