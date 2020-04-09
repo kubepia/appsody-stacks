@@ -1,0 +1,16 @@
+name: icp4a-nodejs-express
+version: 1.0.0
+description: Express web framework for Node.js
+license: Apache-2.0
+language: nodejs
+maintainers:
+  - name: Sam Roberts
+    email: vieuxtech@gmail.com
+    github-id: sam-github
+  - name: Seungil Han
+    email: seungil.han@ibm.com
+    github-id: kubepia
+default-template: default
+requirements:
+  docker-version: ">= 18.09.0"
+  appsody-version: ">= 0.5.0"
