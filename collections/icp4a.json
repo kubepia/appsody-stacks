@@ -1,11 +1,33 @@
 [
 	{
-		"displayName": "Local icp4a-spring-boot2 default template",
+		"displayName": "icp4a-spring-boot2 default template",
 		"description": "Spring Boot using OpenJ9 and Maven",
 		"language": "java",
 		"projectType": "appsodyExtension",
 		"projectStyle": "Appsody",
 		"location": "file:///Users/seungil/.appsody/stacks/dev.local/icp4a-spring-boot2.v1.0.0.templates.default.tar.gz",
 		"self": "/devfiles/icp4a-spring-boot2/devfile.yaml"
-	}
+	},
+	({
+		"displayName": "icp4a-nodejs-express default template",
+		"description": "Express web framework for Node.js",
+		"language": "nodejs",
+		"projectType": "appsodyExtension",
+		"projectStyle": "Appsody",
+		"location": "file:///Users/seungil/.appsody/stacks/dev.local/icp4a-nodejs-express.v1.0.0.templates.default.tar.gz",
+		"links": {
+			"self": "/devfiles/icp4a-nodejs-express/devfile.yaml"
+		}
+	},
+	{
+		"displayName": "icp4a-nodejs-express simple template",
+		"description": "Express web framework for Node.js",
+		"language": "nodejs",
+		"projectType": "appsodyExtension",
+		"projectStyle": "Appsody",
+		"location": "file:///Users/seungil/.appsody/stacks/dev.local/icp4a-nodejs-express.v1.0.0.templates.simple.tar.gz",
+		"links": {
+			"self": "/devfiles/icp4a-nodejs-express/devfile.yaml"
+		}
+	})
 ]
