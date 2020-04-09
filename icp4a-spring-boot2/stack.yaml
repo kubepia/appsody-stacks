@@ -14,7 +14,7 @@ requirements:
 templating-data:
   baseimage: kabanero/ubi8-maven:0.3.1
   finalimage: adoptopenjdk/openjdk8-openj9:ubi-jre
-  parentpomgroup: dev.appsody
+  parentpomgroup: icp4a.appsody
   parentpomid: spring-boot2-stack
-  parentpomrange: "[0.3, 0.4)"
+  parentpomrange: "[1.0, 1.1)"
   parentpomfilename: appsody-boot2-snowdrop-pom.xml

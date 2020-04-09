@@ -30,12 +30,12 @@ COPY --chown=java_user:java_group . /project
 
 RUN if [ -f "/project/user-app/settings.xml" ]; then \
   echo "## build with project settings.xml" ;\
-  mvn   --no-transfer-progress -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}} -s /project/user-app/settings.xml;\
-  mvn   --no-transfer-progress -B dependency:go-offline -f /mvn/pom.xml -s /project/user-app/settings.xml;\
+  mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}} -s /project/user-app/settings.xml;\
+  mvn   -B dependency:go-offline -f /mvn/pom.xml -s /project/user-app/settings.xml;\
   else\ 
   echo "## build with default" ;\
-  mvn   --no-transfer-progress -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}};\
-  mvn   --no-transfer-progress -B dependency:go-offline -f /mvn/pom.xml;\
+  mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}};\
+  mvn   -B dependency:go-offline -f /mvn/pom.xml;\
   fi
 
 
