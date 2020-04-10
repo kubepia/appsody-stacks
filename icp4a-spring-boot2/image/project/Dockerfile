@@ -28,15 +28,15 @@ COPY --chown=java_user:java_group user-app/pom.xml /mvn/pom.xml
 # Copy and build project
 COPY --chown=java_user:java_group . /project
 
-RUN if [ -f "/project/user-app/settings.xml" ]; then \
-  echo "## build with project settings.xml" ;\
-  mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}} -s /project/user-app/settings.xml;\
-  mvn   -B dependency:go-offline -f /mvn/pom.xml -s /project/user-app/settings.xml;\
-  else\ 
-  echo "## build with default" ;\
-  mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}};\
-  mvn   -B dependency:go-offline -f /mvn/pom.xml;\
-  fi
+# RUN if [ -f "/project/user-app/settings.xml" ]; then \
+#   echo "## build with project settings.xml" ;\
+#   mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}} -s /project/user-app/settings.xml;\
+#   mvn   -B dependency:go-offline -f /mvn/pom.xml -s /project/user-app/settings.xml;\
+#   else\ 
+#   echo "## build with default" ;\
+#   mvn   -B dependency:go-offline install -f /mvn/{{.stack.parentpomfilename}};\
+#   mvn   -B dependency:go-offline -f /mvn/pom.xml;\
+#   fi
 
 
 
